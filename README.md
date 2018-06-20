@@ -1,2 +1,3 @@
-Project Euler & Daily Programmer
-:hammer:
+# Project Euler & Daily Programmer :hammer:
+
+how2haskell
