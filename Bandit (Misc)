@@ -17,13 +17,33 @@ ssh bandit2@bandit.labs.overthewire.org -p 2220
 pwd: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
 
   Level 3
-Challenge: cd inhere && ls -a; cat .hidden
+Challenge: cat -u inhere/.* 2>/dev/null
 
 ssh bandit3@bandit.labs.overthewire.org -p 2220
 pwd: UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
 
   Level 4
-Challenge: 
+Challenge: grep -h "^[[:alnum:]]*$" -r inhere
 
 ssh bandit4@bandit.labs.overthewire.org -p 2220
 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+  Level 5
+Challenge: cat $(find . -size 1033c ! -executable) | head -n 1
+
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+  Level 6
+Challenge: cat $(find / -size 33c -group bandit6 -user bandit7 2>&-)
+
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+Level 7
+Challenge:
+
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+http://overthewire.org/wargames/bandit/
