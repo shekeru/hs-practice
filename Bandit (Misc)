@@ -53,9 +53,15 @@ ssh bandit8@bandit.labs.overthewire.org -p 2220
 cvX2JJa4CFALtqS87jk27qwqGhBM9plV
 
   Level 9
-Challenge:
+Challenge: strings data.txt | sed -n 's/^==.*\s//p' | tail -n 1
 
 ssh bandit9@bandit.labs.overthewire.org -p 2220
 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+  Level 10
+Challenge:
+
+ssh bandit10@bandit.labs.overthewire.org -p 2220
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 
 http://overthewire.org/wargames/bandit/
