@@ -59,9 +59,28 @@ ssh bandit9@bandit.labs.overthewire.org -p 2220
 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
   Level 10
-Challenge:
+Challenge: cat data.txt | base64 -d | sed -n 's/^.*\s//p'
 
 ssh bandit10@bandit.labs.overthewire.org -p 2220
 truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+  Level 11
+Challenge: cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' | sed -n 's/^.*\s//p'
+
+ssh bandit11@bandit.labs.overthewire.org -p 2220
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+  Level 12
+Challenge: cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' | sed -n 's/^.*\s//p'
+
+ssh bandit12@bandit.labs.overthewire.org -p 2220
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+
+  Level 13
+Challenge:
+
+ssh bandit13@bandit.labs.overthewire.org -p 2220
+
 
 http://overthewire.org/wargames/bandit/
