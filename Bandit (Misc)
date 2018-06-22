@@ -40,10 +40,22 @@ Challenge: cat $(find / -size 33c -group bandit6 -user bandit7 2>&-)
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 DXjZPULLxYr17uwoI01bNLQbtFemEgo7
 
-Level 7
-Challenge:
+  Level 7
+Challenge: sed -n 's/millionth\t//p' data.txt
 
 ssh bandit7@bandit.labs.overthewire.org -p 2220
 HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+  Level 8
+Challenge: sort data.txt | uniq -u
+
+ssh bandit8@bandit.labs.overthewire.org -p 2220
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+  Level 9
+Challenge:
+
+ssh bandit9@bandit.labs.overthewire.org -p 2220
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 
 http://overthewire.org/wargames/bandit/
