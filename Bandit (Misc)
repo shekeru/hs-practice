@@ -71,7 +71,7 @@ ssh bandit11@bandit.labs.overthewire.org -p 2220
 IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 
   Level 12
-Challenge: cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m' | sed -n 's/^.*\s//p'
+Challenge: 
 
 ssh bandit12@bandit.labs.overthewire.org -p 2220
 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
