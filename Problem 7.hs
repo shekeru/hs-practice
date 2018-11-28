@@ -20,5 +20,5 @@ primes' :: [Integer]
 primes' = map head $ scanl minus [2..] [[p, p+p..] | p <- primes']
 
 primes'' :: [Integer]
-primes'' = 2:3: [x | x <-[5,7..], all ((> 0).rem x) $ prev x]
+primes'' = 2:3:[x | x <-[5,7..], all ((> 0).rem x) $ prev x]
   where prev = primesTo.truncate.sqrt.fromIntegral
