@@ -20,4 +20,21 @@ def list_seq(lists):
     first, rest = lists[0], lists[1:]
     return [[x] + ys for x in first for ys in list_seq(rest)]
 
-list_seq([[1,2,5],[3,4,3]])
+print(list_seq([[0,1], [0,1], [0,1]]))
+def seqf(*vs):
+    if not vs:
+        return [[]]
+    return [[x] + ys for x in range(vs[0]+1) for ys in seqf(*vs[1:])]
+seqf(1,1,1)
+
+def seqk(*vs):
+    if not vs:
+        yield []
+        return
+    for x in range(vs[0]+1):
+        for sgen in seqk(*vs[1:]):
+            var = [x]+sgen
+            if sum(var) != xvs[-1]:
+                yield var
+for l in seqk(1,1,1):
+    print('ret:',l)
